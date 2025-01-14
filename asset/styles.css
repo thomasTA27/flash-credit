@@ -5,6 +5,7 @@
     --white-color: #ffffff;
     --font-color: white;
     --slider-bg-color: #f8f9fa;
+    --application-bg-color: #f8f9fa;
 }
 
 .hero-section {
@@ -55,4 +56,23 @@
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.progress {
+    height: 8px;
+}
+.progress-step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var( --application-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+.progress-step.active {
+    background-color:    var(--primary-color);
 }

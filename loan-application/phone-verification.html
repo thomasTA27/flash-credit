@@ -52,20 +52,26 @@
       </div>
     </nav>
 
-    <style>
+    <div class="container">
+      <a class="row align-items-center justify-content-center" href="amount-money.html"> go to amount</a>
+      <a class="row align-items-center justify-content-center" href="personal-info.html"> go to personal detail</a>
+      <a class="row align-items-center justify-content-center" href="bank-input.html"> go to bank input</a>
+      <a class="row align-items-center justify-content-center" href="phone-verification.html"> go to phone verfication</a>
+    </div>
 
-    </style>
+
+<!-- <h1>now verify ur phone num</h1> -->
 
 
-    <!-- Personal Information Form -->
-     <h4 class="text-center" id = "temp-loan-user"> </h4>
+<h4 class="text-center" id = "temp-loan-user"> </h4>
 
-    <section class="bg-light">
+<section class="bg-light">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
+
                             <!-- Progress bar -->
                             <div class="mb-4">
                                 <div class="text-center small mb-2">20% complete</div>
@@ -83,104 +89,18 @@
     
                             <!-- Form header -->
                             <div class="text-center mb-4">
-                                <h2 class="mb-2">Your details</h2>
-                                <p class="text-muted">Tell us a little about yourself to get started.</p>
+                                <h2 class="mb-2">Please enter the 4 digit verfication code</h2>
                             </div>
     
                             <!-- Form -->
                             <form>
-                                <!-- Title -->
                                 <div class="mb-3">
-                                    <label class="form-label">Title</label>
-                                    <div class="d-flex gap-2">
-                                        <div class="btn-group" role="group">
-                                            <input type="radio" class="btn-check" name="title" id="mr" checked>
-                                            <label class="btn btn-outline-secondary" for="mr">Mr</label>
-    
-                                            <input type="radio" class="btn-check" name="title" id="mrs">
-                                            <label class="btn btn-outline-secondary" for="mrs">Mrs</label>
-    
-                                            <input type="radio" class="btn-check" name="title" id="miss">
-                                            <label class="btn btn-outline-secondary" for="miss">Miss</label>
-    
-                                            <input type="radio" class="btn-check" name="title" id="ms">
-                                            <label class="btn btn-outline-secondary" for="ms">Ms</label>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Name fields -->
-                                <div class="mb-3">
-                                    <label class="form-label">First name (as per your ID)</label>
                                     <input type="text" class="form-control" required>
-                                    <div class="form-text text-danger">Please specify your first name.</div>
+                                    <div class="form-text text-danger">Please enter the code.</div>
                                 </div>
-    
-                                <div class="mb-3">
-                                    <label class="form-label">Middle name (as per your ID, if applicable)</label>
-                                    <input type="text" class="form-control">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label class="form-label">Last name (as per your ID)</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-    
-                                <!-- Date of birth -->
-                                <div class="mb-3">
-                                    <label class="form-label">Date of birth</label>
-                                    <input type="text" class="form-control" placeholder="DD/MM/YYYY" required>
-                                    <div class="form-text">Field is required</div>
-                                </div>
-    
-                                <!-- Address -->
-                                <div class="mb-3">
-                                    <label class="form-label">Residential address</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" required>
-                                        <button class="btn btn-outline-secondary" type="button">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                    <div class="form-text text-danger">Please find or enter your address</div>
-                                </div>
-    
-                                <!-- Contact details -->
-                                <div class="mb-3">
-                                    <label class="form-label">Mobile number</label>
-                                    <input type="tel" class="form-control" placeholder="0___ ___ ___" required>
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" required>
-                                </div>
-    
-                                <!-- Terms checkboxes -->
-                                <div class="mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" required id="terms">
-                                        <label class="form-check-label" for="terms">
-                                            I have reviewed, understand and accept the terms of the 
-                                            <a href="#">Privacy Policy</a>, the 
-                                            <a href="#">Acknowledgement and Consent</a> and the 
-                                            <a href="#">CC Statement Terms and Conditions</a>.
-                                        </label>
-                                    </div>
-                                </div>
-    
-                                <div class="mb-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="marketing">
-                                        <label class="form-check-label" for="marketing">
-                                            By providing my details to Flash Credit, I am consenting to be contacted by telephone or email about offers to enter into, and invitations to apply for, any of Flash Credit credit contracts and products, including small amount credit contracts.
-                                        </label>
-                                    </div>
-                                </div>
-    
                                 <!-- Submit button -->
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-success btn-lg">Next</button>
+                                    <button id="person-basic-info" type="submit" class="btn btn-success btn-lg">Next</button>
                                 </div>
                             </form>
                         </div>
@@ -192,6 +112,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     </section>
+
+
+    
     <!-- Footer -->
     <footer class="bg-secondary text-white py-4 mt-5">
       <div class="container">
