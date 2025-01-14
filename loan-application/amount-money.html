@@ -52,44 +52,141 @@
       </div>
     </nav>
 
-
-
     <!-- Features Section -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body p-5">
+                <h2 class="text-center mb-4">Your loan</h2>
+                <p class="text-center text-muted mb-5">How much money you will use it for</p>
 
-    <section class="container mb-5 mt-5">
-      <div class="card   ">
-        <div class="card-body  " style=" height: 50vh;">  
-          <div class="range-container  d-flex   justify-content-center allign-items-left">
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="slider-container">
-                  <label class="form-label">Loan Amount: <span id="loanAmountValue" class="range-value">A$200</span></label>
-                  <input type="range" class="form-range" id="loanAmount" min="0" max="2000" step="100" value="200" />
-                  <div class="d-flex justify-content-between">
-                    <small>0</small>
-                    <small>2000</small>
+                <h4 class="text-center mb-4">I would like to borrow</h4>
+
+                <!-- <div class="row justify-content-center">
+                                    <div class="row-sm-6 ">
+                                        <div class="input-group mb-3 " style="width: 200px;">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control" placeholder="Amount" />
+                                        </div>
+                                    </div> -->
+
+                <div class="row justify-content-center">
+                  <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="input-group mb-3" style="width: auto">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control" placeholder="Amount" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="slider-container">
-                  <label class="form-label">Loan Tenure: <span id="loanTenureValue" class="range-value">6 months</span></label>
-                  <input type="range" class="form-range" id="loanTenure" min="1" max="36" step="1" value="6" />
-                  <div class="d-flex justify-content-between">
-                    <small>1 month</small>
-                    <small>1666 months</small>
+
+                <!-- <div class="row-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">For</span>
+                                            <input type="text" class="form-control" placeholder="Purpose" />
+                                        </div> -->
+
+                <div class="row-md-6">
+                  <div class="slider-container">
+                    <label class="form-label">Loan Amount: <span id="loanAmountValue" class="range-value">A$200</span></label>
+                    <input type="range" class="form-range" id="loanAmount" min="0" max="2000" step="100" value="200" />
+                    <div class="d-flex justify-content-between">
+                      <small>0</small>
+                      <small>2000</small>
+                    </div>
                   </div>
+
+     
+                  <div class="slider-container">
+                    <label class="form-label">Loan Tenure: <span id="loanTenureValue" class="range-value">6 months</span></label>
+                    <input type="range" class="form-range" id="loanTenure" min="1" max="12" step="1" value="6" />
+                    <div class="d-flex justify-content-between">
+                      <small>1 month</small>
+                      <small>12 months</small>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <h4 class="text-center mb-4">Reason</h4>
+
+                <!-- <form action="loan-application/amount-money.html" method="post" >  -->
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3A" class="accordion-option" data-accordion="3" />
+                          Option 1A
+                        </div>
+
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3B" class="accordion-option" data-accordion="3" />
+                          Option 1B
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3A" class="accordion-option" data-accordion="3" />
+                          Option 2A
+                        </div>
+
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3B" class="accordion-option" data-accordion="3" />
+                          Option 2B
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3A" class="accordion-option" data-accordion="3" />
+                          Option 3A
+                        </div>
+
+                        <div>
+                          <input type="radio" name="accordionChoice" value="Option 3B" class="accordion-option" data-accordion="3" />
+                          Option 3B
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- </form> -->
+
+              
+
+                <div class="text-center mb-4 mt-5">
+                  <a href="personal-info.html" id="amount-money-submit" class="btn btn-success btn-lg px-5">Continue</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> -->
     </section>
-
-
-
-
 
     <!-- Footer -->
     <footer class="bg-secondary text-white py-4 mt-5">
